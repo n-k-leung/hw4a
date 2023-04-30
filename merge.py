@@ -14,5 +14,5 @@ def merge(l1,l2):
         if(i<size1):
                 merged.extend(l1[i:])
         if(j<size2):
-                merged.extend(l1[j:])
+                merged.extend(l2[j:])
         return merged
