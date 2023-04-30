@@ -10,6 +10,6 @@ def sort_dictionary(dict):
         else:
             reverse[age].append((name, phoneNum))
 
-    for j in sorted(reverse.keys()) :
+    for j in sorted(reverse.keys()):
         result += reverse[j]
     return result
