@@ -1,6 +1,7 @@
-def double(func):
-        def wrapper():
-                func()
-                print("Let's try that again")
-                func()
-        return wrapper
+def double(function):
+    def wrapper(): 
+        function()
+        print("Let's try that again!")
+        function()
+        
+    return wrapper
