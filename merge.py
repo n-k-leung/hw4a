@@ -1,14 +1,13 @@
-def merge(l1,l2):
-
-     merged = []
-     i = 0
-     j = 0
-     while i < len(l1) and j < len(l2):
-          if l1[i] <= l2[i]:
-              merged.append(l1[i])
-              i = i + 1
-          else:
-              merged.append(l2[j])
-              j = j + 1
-     merged += l1[i:] + l2[j:]
-     return merged
+def merge(list1, list2):
+    merged = []
+    i = j = 0
+    while i < len(list1) and j < len(list2):
+        if list1[i] <= list2[j]:
+            merged.append(list1[i])
+            i += 1
+        else:
+            merged.append(list2[j])
+            j += 1
+    
+    merged += list1[i:] + list2[j:]
+    return merged
