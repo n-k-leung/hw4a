@@ -10,8 +10,5 @@ def merge(l1,l2):
           else:
               merged.append(l2[j])
               j = j + 1
-     if(i<len(l1)):
-          merged.extend(l1[i:])
-     if(j<len(l2)):
-          merged.extend(l2[j:])
+     merged += l1[i:] + l2[j:]
      return merged
