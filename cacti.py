@@ -12,7 +12,7 @@ def cacti_number(arr):
                 notNextTo = False
             elif (j > 0 and arr[i][j-1] != 0):
                 notNextTo = False
-            elif (j < len(array[0]) - 1 and arr[i][j+1] != 0):
+            elif (j < len(arr[0]) - 1 and arr[i][j+1] != 0):
                 notNextTo = False
 
             if notNextTo == True:
