@@ -1,0 +1,6 @@
+1. it does not change a after function call because it is a call by value, so the copy of the variable a is passed
+and thus only the copy of the variable a is changed.
+2. it does change b after function call because it is a called by reference so the variable b is changed.
+3. they differ by answer because of the way they are called. As a is called by value, when we see what a is after
+it is the same as when we put in originally which is 32. B is called by reference, so its value will change. This
+will change b to be 33.
